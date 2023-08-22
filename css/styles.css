@@ -2,7 +2,26 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #ffffff;
-    margin: 0; 
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+} 
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 /* TEXT DECORATION */
@@ -21,6 +40,37 @@ body {
     text-decoration: underline;
 }
 
+/* HEADER STYLE-HM3 */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 156px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-container {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+}
+
+.contacts-link {
+    display: flex;
+}
+
+.container-address {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+    margin-left: auto;
+    margin-right: 156px;
+}
+
+
 /* BUTTON STYLES */
 button {
     cursor: pointer;
@@ -30,6 +80,7 @@ button:hover,
 button:focus {
     background-color: #404BBF;
 }
+
 
 /* PAGE NAVIGATOR SECTION */
 /* logo-style */
@@ -86,7 +137,6 @@ button:focus {
 
 .main-menu-title {
     color: #FFFFFF;
-    text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -123,7 +173,6 @@ button:focus {
 /* OUR TEAM SECTION */
 .our-team {
     background-color: #F4F4FD;
-    text-align: center;
 }
 
 .team-container {
@@ -168,7 +217,6 @@ button:focus {
 
 .our-portfolio {
     background-color: #FFFFFF;
-    text-align: center;
 }
 
 .portfolio-header {
