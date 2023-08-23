@@ -176,6 +176,20 @@ button:focus {
 }
 
 /* ADVANTAGES SECTION */
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+     white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .advantages-header {
     color: #2E2F42;
     font-size: 20px;
@@ -316,7 +330,7 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
 .text-logo-color {
@@ -331,6 +345,8 @@ button:focus {
 
 .link-logo {
     display: inline-block;
+    margin-bottom: 16px;
+
 }
 
 
