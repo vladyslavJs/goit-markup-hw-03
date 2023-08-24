@@ -17,6 +17,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .container {
@@ -96,7 +98,7 @@ img {
     letter-spacing: 0.02em; 
 }
 
-/* ELEVEMNTS POSITION */
+/* ELEMENTS POSITION */
 .header-nav {
     border-bottom: 1px solid #e7e9fc;
 }
@@ -213,6 +215,7 @@ button:focus {
 
 .advantages-items {
     width: calc((100% - 72px) / 4);
+
 }
 
 
@@ -221,9 +224,29 @@ button:focus {
     background-color: #F4F4FD;
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.employee-card {
+    padding: 32px 0;
+}
+
+.team-name {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-position {
+    text-align: center;
+}
+
 .team-container {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    cursor: pointer;
 }
 
 .team-title{
@@ -243,10 +266,6 @@ button:focus {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
-    margin-top: 32px;
-    padding: 8px;
-    
 }
 
 .team-position {
@@ -255,16 +274,32 @@ button:focus {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 32px;
-}
-
-.team-list {
-    display: flex;
-    gap: 24px;
 }
 
 /* OUR PORTFOLIO SECTION*/
+.our-portfolio {
+    background-color: #FFFFFF;
+
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    align-self: stretch;
+}
+
+.portfolio-container {
+    width: calc((100% - 48px) / 3);
+    cursor: pointer;
+}
+
+.application-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
 .portfolio-title {
     color:#2e2f42;
     font-size: 36px;
@@ -276,20 +311,12 @@ button:focus {
     margin-bottom: 72px;
 }
 
-.our-portfolio {
-    background-color: #FFFFFF;
-
-}
-
 .portfolio-header {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
-    margin-bottom: 8px;
-    padding: 0px 16px;
 }
 
 .portfolio-text {
@@ -298,21 +325,6 @@ button:focus {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 32px;
-    padding: 0px 16px;
-}
-
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
-    align-self: stretch;
-}
-
-.portfolio-container {
-    border: 1px solid #E7E9FC;
-    width: calc((100% - 48px) / 3);
-    cursor: pointer;
 }
 
 /* FOTTER SECTION */
