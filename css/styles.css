@@ -1,3 +1,4 @@
+/* MAIN-STYLES */
 body {  
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -55,7 +56,7 @@ button {
 
 /* PAGE NAVIGATOR SECTION */
 /* logo-style */
-.link-logo {
+.logotype {
     color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -63,7 +64,11 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
+    display: flex;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 76px;
 }
 
 .text-logo {
@@ -76,8 +81,6 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0; 
-    /* warning */
 }
 
 /* address */
@@ -107,35 +110,38 @@ button {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.main-container {
+.page-header-container {
     display: flex;
     justify-content: space-between;
+
 }
 
-.menu-container {
-   display: flex;
-   gap: 40px; 
+.page-navigator {
+    display: flex;
+    text-align: center;
 }
 
-.contacts-link {
-   display: flex;
-   font-style: normal; 
+.menu {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    column-gap: 40px;
 }
 
 .container-address {
-   display: flex;
-   gap: 40px;
-   padding: 24px 0;
-   margin-left: auto; 
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 40px;
 }
 
+.contacts-link {
+    display: flex;
+    font-style: normal;
+}
 
 /* HERO SECTION */
+/* ELEMENTS POSITION */
 .main-menu {
     background: #2E2F42;
     padding: 188px 0;
@@ -170,7 +176,7 @@ button {
     margin-top: 48px;
     min-width: 169px;
 }
-/* BUTTON STYLES */
+/* BUTTON-ACTIVE */
 
 button:hover,
 button:focus {
@@ -178,6 +184,7 @@ button:focus {
 }
 
 /* ADVANTAGES SECTION */
+/* visually-patern */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -209,6 +216,7 @@ button:focus {
     letter-spacing: 0.02em;
 }
 
+/* ELEMENTS POSITION */
 .advatnages-list {
     display: flex;
     gap: 24px;
@@ -219,35 +227,9 @@ button:focus {
 
 }
 
-
 /* OUR TEAM SECTION */
 .our-team {
     background-color: #F4F4FD;
-}
-
-.team-list {
-    display: flex;
-    gap: 24px;
-}
-
-.employee-card {
-    padding: 32px 0;
-}
-
-.team-name {
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.team-position {
-    text-align: center;
-}
-
-.team-container {
-    background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-    cursor: pointer;
 }
 
 .team-title{
@@ -277,28 +259,36 @@ button:focus {
     letter-spacing: 0.02em;
 }
 
+/* ELEMENTS POSITION */
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.employee-card {
+    padding: 32px 0;
+}
+
+.team-name {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-position {
+    text-align: center;
+}
+
+.team-container {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    cursor: pointer;
+}
+
 /* OUR PORTFOLIO SECTION*/
 .our-portfolio {
     background-color: #FFFFFF;
 
-}
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
-    align-self: stretch;
-}
-
-.portfolio-container {
-    width: calc((100% - 48px) / 3);
-    cursor: pointer;
-}
-
-.application-info {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-    margin-bottom: 8px;
 }
 
 .portfolio-title {
@@ -328,13 +318,28 @@ button:focus {
     letter-spacing: 0.02em;
 }
 
-/* FOTTER SECTION */
-.footer-block {
-    background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+/* ELEMENTS POSITION */
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    align-self: stretch;
 }
 
+.portfolio-container {
+    width: calc((100% - 48px) / 3);
+    cursor: pointer;
+}
+
+.application-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
+
+/* FOTTER SECTION */
 .footer-text {
     color:  #F4F4FD;
     font-size: 16px;
@@ -342,7 +347,6 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    /* margin-top: 16px; */
 }
 
 .text-logo-color {
@@ -353,6 +357,13 @@ button:focus {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+/* ELEMENTS POSITION */
+.footer-block {
+    background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .link-logo {
