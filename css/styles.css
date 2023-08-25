@@ -346,8 +346,7 @@ button:focus {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    max-width: 264px;
+    letter-spacing: 0.02em;   
 }
 
 .text-logo-color {
@@ -358,13 +357,13 @@ button:focus {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin: auto;
 }
 
 /* ELEMENTS POSITION */
 .footer-block {
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .logotype-footer {
@@ -377,6 +376,10 @@ button:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 17px;
+}
+
+.footer-pos {
+    max-width: 264px;
 }
 
 
