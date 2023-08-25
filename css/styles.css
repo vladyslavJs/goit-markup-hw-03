@@ -348,7 +348,6 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    padding-top: 17px;
 }
 
 .text-logo-color {
@@ -377,6 +376,7 @@ button:focus {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 17px;
 }
 
 
